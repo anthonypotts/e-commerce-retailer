@@ -40,7 +40,7 @@ router.get('/:id', (req, res) => {
   })
   .then(dbCategoryData => {
     if(!dbCategoryData) {
-      res.status(404).json({ message: 'This id does not match any ids our system' })
+      res.status(404).json({ message: 'This id does not match any ids in our system' })
       return;
     };
   })
